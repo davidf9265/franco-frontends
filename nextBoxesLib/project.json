@@ -1,0 +1,36 @@
+{
+  "name": "nextBoxesLib",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "nextBoxesLib/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["nextBoxesLib/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/nextBoxesLib",
+        "tsConfig": "nextBoxesLib/tsconfig.lib.json",
+        "project": "nextBoxesLib/package.json",
+        "entryFile": "nextBoxesLib/src/index.ts",
+        "external": ["react", "react-dom", "react/jsx-runtime"],
+        "rollupConfig": "@nx/react/plugins/bundle-rollup",
+        "compiler": "swc",
+        "assets": [
+          {
+            "glob": "nextBoxesLib/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    }
+  }
+}

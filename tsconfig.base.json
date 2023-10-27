@@ -1,0 +1,23 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@franco-fronts/nextBoxesLib": ["nextBoxesLib/src/index.ts"],
+      "@franco-fronts/nextBoxesLib/server": ["nextBoxesLib/src/server.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
