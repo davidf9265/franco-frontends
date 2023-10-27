@@ -1,4 +1,7 @@
-import Box1 from '../components/box1/box1';
+// import Box1 from '../components/box1/box1';
+
+import { Box1 } from '@franco-fronts/nextBoxesLib';
+
 import styles from './page.module.css';
 
 export default async function Index() {

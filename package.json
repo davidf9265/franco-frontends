@@ -4,9 +4,10 @@
   "license": "MIT",
   "scripts": {
     "dev:testFrontend": "nx serve testFrontend",
-    "prod:testFrontend": "nx build testFrontend --prod"
+    "prod:testFrontend": "nx build testFrontend --prod",
+    "build:nextBoxesLib": "nx build nextBoxesLib"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@nrwl/next": "^17.0.2",
     "@swc/helpers": "~0.5.2",
