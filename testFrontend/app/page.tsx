@@ -2,6 +2,13 @@
 
 import { Box1 } from '@franco-fronts/nextBoxesLib';
 
+// import { Box1 } from '../../dist/nextBoxesLib';
+
+// import { Box1 } from '@francoorg/boxeslib';
+
+// import { Box2 } from '@francoorg/box2';
+
+import { Box2 } from '@francoorg/box2';
 import styles from './page.module.css';
 
 export default async function Index() {
@@ -9,7 +16,7 @@ export default async function Index() {
     <div className={styles.page}>
       <div className={styles.wrapper}>
         <div className={styles.container}>
-          <Box1>Hello</Box1>
+          <Box2>Hello</Box2>
         </div>
       </div>
     </div>

@@ -1,0 +1,17 @@
+{
+  "name": "@francoorg/box2",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "private": false,
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "scripts": {
+    "build": "nx run box2:build-storybook",
+    "chromatic": "npx chromatic --project-token=chpt_1c7b124bd2805a7 --build-script-name=build"
+  }
+}

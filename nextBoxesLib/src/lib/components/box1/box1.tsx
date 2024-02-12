@@ -1,3 +1,4 @@
+import './box1.module.css';
 import styles from './box1.module.css';
 
 export interface Box1Props {
@@ -6,7 +7,7 @@ export interface Box1Props {
 
 export function Box1(props: Box1Props) {
   return (
-    <div className={styles.box}>
+    <div className={styles['box']}>
       <div className={styles['card']}>
         <div className={styles['card-header']}>
           <h1>A box!</h1>

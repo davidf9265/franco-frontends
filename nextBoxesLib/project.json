@@ -16,6 +16,8 @@
       "executor": "@nx/rollup:rollup",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "style": "css",
+        "cssModules": true,
         "outputPath": "dist/nextBoxesLib",
         "tsConfig": "nextBoxesLib/tsconfig.lib.json",
         "project": "nextBoxesLib/package.json",
